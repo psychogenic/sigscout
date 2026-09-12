@@ -6,7 +6,9 @@ Anyone can deep fake anything now, so this is an easy way to check a web page fo
 
 ![demo usage](images/sigscoutverif.png)
 
-I have a video describing why this matters and how it works:
+
+I have a video describing why this matters and how it works, check it out here:
+
 [![Watch the video](https://img.youtube.com/vi/ihiDrIOV9uc/hqdefault.jpg)](https://www.youtube.com/embed/ihiDrIOV9uc)
 
 
