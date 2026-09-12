@@ -27,11 +27,28 @@ Verify the details
 ![verify them](images/sigscouttrustkey.png)
 
 Now it's in your set
+
+
 ![trusted keys](images/sigscouttrusted.png)
 
   4) Hit scan page and the extension finds and validates the signature
+  
+
 
 ![validated signature](images/sigscoutverified.png)
+
+
+And that's it.  I'll try to get this in the web store, but you can install it yourself using the information below.
+
+To try it out:
+
+ 1) head to [one of my recent videos](https://www.youtube.com/watch?v=dbXCghmnyEs)
+ 
+ 2) Install the key from [https://inductive-kickback.com/downloads/psychogenic-pubkey.json](https://inductive-kickback.com/downloads/psychogenic-pubkey.json)
+ 
+ 3) Click Verify -> "Scan this Page"
+ 
+ Yay
 
 ## Extension details
 
