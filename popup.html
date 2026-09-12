@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sig Scout: PGP Signature Verifier</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="app-header">
+    <img src="icons/icon32.png" alt="" class="logo">
+    <h1>Sig Scout: PGP Signature Verifier</h1>
+  </header>
+
+  <nav class="tabs" role="tablist">
+    <button class="tab-btn active" data-tab="verify" role="tab" aria-selected="true">Verify</button>
+    <button class="tab-btn" data-tab="keys" role="tab" aria-selected="false">Trusted Keys</button>
+  </nav>
+
+  <main>
+    <!-- VERIFY TAB -->
+    <section id="tab-verify" class="tab-panel active">
+      <p class="hint">
+        Scans the page you're currently viewing for PGP cleartext-signed blocks
+        and checks each one against your trusted keys.
+      </p>
+      <button id="scan-btn" class="primary-btn">Scan This Page</button>
+      <div id="scan-status" class="status" aria-live="polite"></div>
+      <div id="scan-results" class="results-list"></div>
+    </section>
+
+    <!-- TRUSTED KEYS TAB -->
+    <section id="tab-keys" class="tab-panel">
+      <p class="hint">
+        Trusted keys are used to check signatures. Add a key by pasting a link
+        to a small JSON file that contains a title and an armored public key.
+      </p>
+      <button id="add-key-btn" class="primary-btn">Add Trusted Key</button>
+
+      <!-- Add-key form (hidden until "Add Trusted Key" is clicked) -->
+      <div id="add-key-form" class="card hidden">
+        <label for="key-url-input">Key metadata URL</label>
+        <input id="key-url-input" type="url" placeholder="https://example.com/johnnys-public-key.json" autocomplete="off">
+        <div id="add-key-error" class="error-text hidden"></div>
+        <div class="btn-row">
+          <button id="fetch-key-btn" class="primary-btn">Fetch Key</button>
+          <button id="cancel-add-key-btn" class="secondary-btn">Cancel</button>
+        </div>
+      </div>
+
+      <!-- Key preview / confirmation (hidden until a fetch succeeds) -->
+      <div id="key-preview" class="card hidden">
+        <h3>Review before trusting this key</h3>
+        <dl id="key-preview-details" class="key-details"></dl>
+        <div id="key-preview-warning" class="warning-text hidden"></div>
+        <div class="btn-row">
+          <button id="confirm-add-key-btn" class="primary-btn">Trust This Key</button>
+          <button id="cancel-preview-btn" class="secondary-btn">Cancel</button>
+        </div>
+      </div>
+
+      <h2 class="section-title">Currently trusted</h2>
+      <div id="trusted-keys-list" class="key-list"></div>
+
+      <details class="permissions-details">
+        <summary>Site access granted for key fetching</summary>
+        <p class="hint small">
+          To fetch a key's JSON file, the extension asks your permission to
+          access that site once. Granted sites are listed here and can be
+          revoked at any time.
+        </p>
+        <div id="granted-origins-list" class="origins-list"></div>
+      </details>
+    </section>
+  </main>
+
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
