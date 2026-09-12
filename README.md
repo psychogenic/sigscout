@@ -1,5 +1,40 @@
 # Sig Scout PGP Signature Verifier (Chrome Extension)
 
+How can you know your favorite creator actually made this video or post?
+
+Anyone can deep fake anything now, so this is an easy way to check a web page for valid signatures
+
+![demo usage](images/sigscoutverif.png)
+
+I have a video describing why this matters and how it works:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ihiDrIOV9uc?si=PguYCNJlYzKor35c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+But, rather than do everything manually, many have asked for an easier way and this is my proposal.
+
+  1) You install this extension
+  
+  2) Creators publish and point you to a URL with meta-data, [like this](https://inductive-kickback.com/downloads/psychogenic-pubkey.json)
+  
+  3) You add this key to your set of trusted keys
+  
+Paste in that URL
+
+![fetch details](images/sigscoutaddkey.png)
+
+Verify the details
+![verify them](images/sigscouttrustkey.png)
+
+Now it's in your set
+![trusted keys](images/sigscouttrusted.png)
+
+  4) Hit scan page and the extension finds and validates the signature
+
+![validated signature](images/sigscoutverified.png)
+
+## Extension details
+
 A Manifest V3 Chrome extension with two jobs:
 
 1. **Verify** — on demand, scan the page you're viewing for PGP cleartext-signed
