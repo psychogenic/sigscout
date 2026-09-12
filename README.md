@@ -8,7 +8,7 @@ Anyone can deep fake anything now, so this is an easy way to check a web page fo
 
 I have a video describing why this matters and how it works:
 
-https://www.youtube.com/watch?v=ihiDrIOV9uc
+[![Watch the video](https://i.sstatic.net/ihiDrIOV9uc.png)](https://youtu.be/ihiDrIOV9uc)
 
 
 But, rather than do everything manually, many have asked for an easier way and this is my proposal.
