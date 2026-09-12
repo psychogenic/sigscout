@@ -8,7 +8,7 @@ Anyone can deep fake anything now, so this is an easy way to check a web page fo
 
 I have a video describing why this matters and how it works:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ihiDrIOV9uc?si=PguYCNJlYzKor35c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+https://www.youtube.com/watch?v=ihiDrIOV9uc
 
 
 But, rather than do everything manually, many have asked for an easier way and this is my proposal.
