@@ -2,7 +2,9 @@
 
 How can you know your favorite creator actually made this video or post?
 
-Anyone can deep fake anything now, so this is an easy way to check a web page for valid signatures
+Anyone can deep fake anything now, so this is an easy way to check a web page for valid signatures.
+
+Once [installed](#install-unpacked-for-developmentpersonal-use) it lets you see if any web page contains a signature from someone you trust:
 
 ![demo usage](images/sigscoutverif.png)
 
@@ -15,7 +17,7 @@ I have a video describing why this matters and how it works, check it out here:
 
 But, rather than do everything manually, many have asked for an easier way and this is my proposal.
 
-  1) You install this extension
+  1) You [install](#install-unpacked-for-developmentpersonal-use) this extension
   
   2) Creators publish and point you to a URL with meta-data, [like this](https://inductive-kickback.com/downloads/psychogenic-pubkey.json)
   
