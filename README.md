@@ -52,6 +52,27 @@ To try it out:
  
  Yay
 
+## Install (unpacked, for development/personal use)
+
+1. Download the [latest release](https://github.com/psychogenic/sigscout/archive/refs/tags/v0.9.0.zip)
+
+2. Unzip it
+![unzip it](images/unzipit.png)
+
+3. Open `chrome://extensions`.
+![chrome extensions](images/chromeextensions.png)
+
+4. Turn on **Developer mode** (top right).
+![chrome developer mode](images/develmode.png)
+
+5. Click **Load unpacked** and select this folder.
+![load unpacked](images/loadunpacked.png)
+
+6. Pin the extension from the puzzle-piece menu so it's easy to reach.
+![load unpacked](images/pinit.png)
+
+You are now ready to go!
+
 ## Extension details
 
 A Manifest V3 Chrome extension with two jobs:
@@ -67,12 +88,6 @@ All cryptography is done locally in the browser with [OpenPGP.js](https://openpg
 (bundled in `lib/openpgp.min.mjs`, v6.3.1). No key material or page content is
 sent anywhere.
 
-## Install (unpacked, for development/personal use)
-
-1. Open `chrome://extensions`.
-2. Turn on **Developer mode** (top right).
-3. Click **Load unpacked** and select this folder.
-4. Pin the extension from the puzzle-piece menu so it's easy to reach.
 
 ## Try it with the included demo
 
