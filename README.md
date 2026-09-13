@@ -75,6 +75,33 @@ To try it out:
 
 You are now ready to go!
 
+
+## For Creators
+
+If you are a creator and want to sign your own pages, you need a PGP keypair and to generate and host a JSON file with the public key to share with your audience.
+
+I've created a <a href="https://psychogenic.com/sigscout-key-metadata.html">simple form</a> to let you create this JSON file.
+
+![generating JSON](images/generator.png)
+
+
+But first you need your key.  Generating the key depends on which software you're using, but there are some <a href="https://www.encryptionconsulting.com/how-to-generate-pgp-key-pair/">good instructions online</a>.
+
+Short version is, if using <a href="https://www.gnupg.org/">GNU Privacy Guard</a> or <a href="https://gpg4win.org/get-gpg4win.html">Gpg4win</a>, you just issue a
+
+```
+gpg --full-generate-key
+
+# and then
+
+gpg --export -a KEYID
+
+```
+
+Then, just copy the entire *PGP PUBLIC KEY BLOCK* (from BEGIN to END, including the `-----` dashes), and paste it into the <a href="https://psychogenic.com/sigscout-key-metadata.html">JSON generator</a> form.
+
+
+
 ## Extension details
 
 A Manifest V3 Chrome extension with two jobs:
